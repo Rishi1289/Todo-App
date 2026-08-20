@@ -1,0 +1,192 @@
+/* ==============================
+   RESET
+================================ */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #adc7ee;
+  color: #333;
+}
+
+
+/* ==============================
+   MAIN APPLICATION
+================================ */
+
+#root {
+  min-height: 100vh;
+}
+
+
+/* ==============================
+   MAIN CONTAINER
+================================ */
+
+#root > div {
+  width: 90%;
+  max-width: 1100px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+/* ==============================
+   MAIN HEADING
+================================ */
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+
+
+/* ==============================
+   SECTION HEADING
+================================ */
+
+h2 {
+  color: #34495e;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+
+/* ==============================
+   FORM SECTION
+================================ */
+
+h2:first-of-type {
+  margin-top: 0;
+}
+
+
+/* ==============================
+   INPUTS
+================================ */
+
+input {
+  padding: 12px 15px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+
+
+/* ==============================
+   ADD / UPDATE BUTTON
+================================ */
+
+button {
+  padding: 11px 18px;
+  margin: 5px;
+  border: none;
+  border-radius: 6px;
+  background-color: #3498db;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+
+/* ==============================
+   EMPLOYEE LIST
+================================ */
+
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 20px 0;
+}
+
+
+/* ==============================
+   EMPLOYEE DETAILS
+================================ */
+
+p {
+  margin: 8px 0;
+  font-size: 15px;
+  color: #555;
+}
+
+
+/* ==============================
+   EDIT BUTTON
+================================ */
+
+button:nth-of-type(2) {
+  background-color: #f39c12;
+}
+
+button:nth-of-type(2):hover {
+  background-color: #d68910;
+}
+
+
+/* ==============================
+   DELETE BUTTON
+================================ */
+
+button:nth-of-type(3) {
+  background-color: #e74c3c;
+}
+
+button:nth-of-type(3):hover {
+  background-color: #c0392b;
+}
+
+
+/* ==============================
+   RESPONSIVE DESIGN
+================================ */
+
+@media (max-width: 900px) {
+  input {
+    width: 45%;
+  }
+}
+
+@media (max-width: 600px) {
+  #root > div {
+    width: 95%;
+    padding: 20px;
+    margin: 20px auto;
+  }
+
+  input {
+    width: 100%;
+    margin: 6px 0;
+  }
+
+  button {
+    width: auto;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+}
